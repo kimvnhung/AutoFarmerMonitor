@@ -1,0 +1,27 @@
+﻿<Window x:Class="AutoFarmerMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoFarmerMonitor"
+        mc:Ignorable="d"
+        Title="Select RegClone.exe" Height="300" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox 
+            Grid.Column="0"
+            x:Name="pathTb"
+            Width="360"
+            Height="20"/>
+        <Button
+            Grid.Column="1"
+            Name="selectBtn"
+            Width="50"
+            Height="20"
+            Content="Select"
+            Click="selectBtn_Click"/>
+    </Grid>
+</Window>
